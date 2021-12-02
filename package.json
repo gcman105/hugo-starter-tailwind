@@ -2,11 +2,6 @@
     "name": "hugo-starter-tailwind",
     "version": "0.1.0",
     "description": "Tailwindcss starter theme for Hugo",
-    "scripts": {
-        "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
-        "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit",
-        "example": "hugo server --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/example/ -p 8008"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gcman105/hugo-starter-tailwind.git"

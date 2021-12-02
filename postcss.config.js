@@ -7,7 +7,12 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 });
 
 module.exports = {
-     plugins: [
-         ...(process.env.HUGO_ENVIRONMENT === 'production' ? [ purgecss ] : [])
-     ]
- };
+    plugins: [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+        ...process.env.HUGO_ENVIRONMENT === 'production'
+            ? [purgecss]
+            : []
+    ]
+};
